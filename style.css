@@ -1,0 +1,238 @@
+/* Barra de navegacion */
+
+.navbar {
+    padding: 1rem;
+    background-color: #ff992c;
+  }
+  
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;  
+  }
+.nav-link {
+    background-color: #fef9d9;
+    color: #443329;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px 15px;
+  }
+  
+.nav-link:hover {
+    background-color: #c9c691;
+  }
+
+/* Estilos generales */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.seccion-titulo {
+  color: #ffb16f;
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: 'Permanent Marker', cursive;
+}
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #443329;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Permanent Marker', cursive;
+  color: #e2793b;
+}
+
+p {
+  color: #443329;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+}
+
+.seccion-clara {
+  color: #443329;
+  background-color: rgb(255, 255, 255);
+}
+
+.seccion-oscura {
+  color: #fef9d9;
+  background-color: #e2793b;
+}
+
+/* Deportes */
+
+.deportes {
+  padding: 40px 40px 80px 40px;
+}
+
+.deportes .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.deporte-imagen {
+  height: 600px;
+  width: 600px;
+  margin: 10px 10px 20px 10px;
+  border-radius: 5%;
+}
+
+.deporte-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.deporte-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Seccion Hero */
+
+.hero {
+  background-color: #fef9d9;
+  min-height: 550px;
+  text-align: center;
+}
+
+.hero-principal {
+  padding: 2rem;
+}
+
+.hero-imagen-desarrollador {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+.hero-principal h2 {
+  font-size: 1.5rem;
+  color: #443329;
+}
+
+/* Conocer */
+
+.conocer {
+  padding: 40px 40px 60px 40px;
+}
+
+.conocer .columna {
+  padding: 20px;
+  border: 2px solid #443329;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.4s ease-in;
+}
+
+.conocer .columna:hover {
+  color: #fef9d9;
+  background-color: #443329;
+}
+
+.conocer i {
+  font-size: 2.5rem;
+  color: #c9c691;
+  background-color: #e2793b;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.conocer-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+}
+
+/* Pie de pagina (footer) */
+
+footer {
+  min-height: 250px;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  padding: 2px;
+}
+
+/* Formulario */
+
+.boton{
+  text-decoration: none;
+  border: 1px solid #e2793b;
+  padding: 10px 20px;
+}
+.boton:hover{
+  background: #ffb16f;
+  color: #443329;
+}
+#formulario{
+  width: 450px;
+  height: auto;
+  overflow: hidden;
+  padding: 5px;
+}
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 800px) {
+  .deporte-imagen {
+    height: 300px;
+    width: 250px;
+  }
+
+  .deporte-texto {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hero-inferior-imagen {
+    max-width: 800px;
+  }
+}
